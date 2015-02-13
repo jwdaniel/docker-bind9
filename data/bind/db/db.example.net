@@ -1,0 +1,15 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	1h
+@	IN	SOA	example.net. root.example.net. (
+		2015021200	; Serial
+		604800		; Refresh
+		86400		; Retry
+		2419200		; Expire
+		600 )		; Negative Cache TTL
+;
+@	IN	NS	ns.example.net.
+@	IN	A	172.28.1.1
+ns	IN	A	172.28.1.1
+
